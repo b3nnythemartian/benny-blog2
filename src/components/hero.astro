@@ -1,0 +1,45 @@
+---
+import { Image } from "@astrojs/image/components";
+import heroImage from "assets/nyan-cat.gif";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 md:order-1 md:block">
+    <img
+      src="/images/nyan-cat.gif"
+      alt="flying nyan cat"
+      loading="eager"
+    />
+  </div>
+  <div>
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
+      b3nnytheMartian
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      hi guys, welcome to my blog 😄. It's basically a live documentary of my successes and failiures in my foray to change the world.     </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="#"
+        href="/blog"
+        target="_blank"
+        class="flex gap-1 items-center justify-center"
+        rel="noopener">
+        <Icon class="text-white w-5 h-5" name="bx:bxs-memory-card" />
+
+        Check out my blog</Link
+      >
+      <Link
+        size="lg"
+        style="outline"
+        rel="noopener"
+        href="https://github.com/b3nnythemartian"
+        class="flex gap-1 items-center justify-center"
+        target="_blank">
+        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
+        Github</Link
+      >
+    </div>
+  </div>
+</main>
